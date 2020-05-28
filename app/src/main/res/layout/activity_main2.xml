@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/v_flipper"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="485dp"
+        android:layout_marginTop="235dp"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:text="Rumah Mungil"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="25dp"
+                    android:text="4.0"
+                    android:textColor="@color/Orange"
+                    android:textStyle="bold"></TextView>
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:progressTint="@color/Orange"
+                    android:rating="4.0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.033"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:text="126 reviews"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Art Museum"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="$$$"
+                    android:textSize="15dp"></TextView>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_drive_eta_black_24dp"></ImageView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="55 min"
+                    android:textSize="15dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/LightGrey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@color/White"
+                android:text="OVERVIEW"
+                android:textColor="@color/DarkGray"
+                android:textSize="15dp"></Button>
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="35dp"
+                android:background="@color/White"
+                android:text="POST"
+                android:textColor="@color/DarkGray"
+                android:textSize="15dp"></Button>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="35dp"
+                android:background="@color/White"
+                android:text="REVIEWS"
+                android:textColor="@color/DarkGray"
+                android:textSize="15dp"></Button>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="35dp"
+                android:background="@color/White"
+                android:text="PHOTOS"
+                android:textColor="@color/DarkGray"
+                android:textSize="15dp"></Button>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/DarkGray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dp">
+
+            <FrameLayout
+                android:layout_width="86dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp">
+
+                <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/arah"></Button>
+
+                <TextView
+                    android:layout_width="89dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:text="DIRECTIONS"
+                    android:textColor="@color/Blue">
+
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/telpon"></Button>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:text="CALL"
+                    android:textColor="@color/Blue">
+
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="88dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bintang"></Button>
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:text="SAVE"
+                    android:textColor="@color/Blue">
+
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/website"></Button>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:text="WEBSITE"
+                    android:textColor="@color/Blue">
+
+                </TextView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/DarkGray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="91dp">
+
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Besides exhibits,this ceramics museum
+                offers classes,lectures and tours,plus a bistro and gift shop."
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Know What Features this place has?"
+            android:textSize="18dp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+</FrameLayout>
